@@ -225,7 +225,7 @@ par(mfrow=c(2,1))
 par(mar=c(3,4.5,2,3),cex.axis=1.2,cex.lab=1.2,cex.main=1.5,family="serif",las=1,tcl=0.3,mgp=c(2,0.3,0)) 
 plot(riqueza~area, xlab="Área (ha)", ylab="Riqueza de espécies de \n roedores e marsupiais", cex=1.2, pch=16, bty="u")
 par(new=TRUE)
-plot(z~area,  ann=F,axes=F, cex=1,2, pch=17,col="blue") 
+plot(w~area,  ann=F,axes=F, cex=1,2, pch=17,col="blue") 
 axis(4,col="blue")
 mtext("Riqueza insetos", side=4, cex=1.2, line=1.5, las=0,col="blue")
 
@@ -240,15 +240,15 @@ text(2,25, "@", cex=1.8)
 
 ##### inserindo linhas de tendência
 mriq=lm(riqueza~area)
-mz=lm(z~area)
+mw=lm(w~area)
 
 par(mfrow=c(2,1))
 par(mar=c(3,4.5,2,3),cex.axis=1.2,cex.lab=1.2,cex.main=1.5,family="serif",las=1,tcl=0.3,mgp=c(2,0.3,0)) 
 plot(riqueza~area, xlab="Área (ha)", ylab="Riqueza de espécies de\n roedores e marsupiais", cex=1.2, pch=16, bty="u")
 abline(mriq)
 par(new=TRUE)
-plot(z~area,  ann=F,axes=F, cex=1,2, pch=17,col="blue") 
-abline(mz,col="blue")
+plot(w~area,  ann=F,axes=F, cex=1,2, pch=17,col="blue") 
+abline(mw,col="blue")
 axis(4)
 mtext("Riqueza insetos", side=4, cex=1.2, line=1.5, las=0,col="blue")
 
