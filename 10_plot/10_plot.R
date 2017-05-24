@@ -314,7 +314,7 @@ par(mar=c(3,4.5,2,3),cex.axis=1.2,cex.lab=1.2,cex.main=1.5,family="serif",las=1,
 plot(riqueza~area, xlab="Área (ha)", ylab="", cex=1.2, pch=16, bty="u",ylim=c(-30,30),yaxt="n")
 axis(2,at=c(0,10,20,30))
 par(new=TRUE)
-plot(z~area,  cex=1,2, pch=17,col="blue",ylim=c(5,100),ann=F,axes=F) 
+plot(w~area,  cex=1,2, pch=17,col="blue",ylim=c(5,100),ann=F,axes=F) 
 axis(4,at=c(0,10,20,30,40,50))
 
 mtext("Riqueza mamíferos", side=2, cex=1.2, line=1.5, las=0)
